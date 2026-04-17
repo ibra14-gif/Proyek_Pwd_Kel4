@@ -1,3 +1,15 @@
+<?php
+include 'koneksi.php';
+
+$query = mysqli_query($conn, "SELECT * FROM dokter");
+
+$query_jadwal = mysqli_query($conn, "
+    SELECT jadwal.*, dokter.nama_dokter 
+    FROM jadwal
+    JOIN dokter ON jadwal.id_dokter = dokter.id_dokter
+");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,24 +73,37 @@
     <div class="container mt-5">
         <h2 class="mb-4">Reservasi</h2>
         <form action="landing.php" method="POST">
-            <div class="mb-3">
-                <label for="nama" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="nama" name="nama" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="tanggal" class="form-label">Tanggal Reservasi</label>
-                <input type="date" class="form-control" id="tanggal" name="tanggal" required>
-            </div>
-            <div class="mb-3">
-                <label for="waktu" class="form-label">Waktu Reservasi</label>
-                <input type="time" class="form-control" id="waktu" name="waktu" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+
+        <label>Nama Pasien</label>
+        <input type="text" name="nama_pasien" required>
+
+        <label>No HP</label>
+        <input type="text" name="no_hp" required>
+
+        <label>Pilih Dokter</label>
+        <select name="id_dokter" required>
+            <option value="">-- Pilih Dokter --</option>
+            <?php while($data = mysqli_fetch_assoc($query)) { ?>
+                <option value="<?= $data['id_dokter']; ?>">
+                    <?= $data['nama_dokter']; ?> - <?= $data['spesialis']; ?>
+                </option>
+            <?php } ?>
+        </select>
+
+        <label>Pilih Jadwal</label>
+        <select name="id_jadwal">
+          <!-- dari database -->
+        </select>
+
+        <label>Tanggal</label>
+        <input type="date" name="tanggal" required>
+
+        <label>Keluhan</label>
+        <textarea name="keluhan"></textarea>
+
+        <button type="submit">Booking</button>
+
+      </form>
 
     </div>
 
