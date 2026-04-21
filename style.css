@@ -7,7 +7,6 @@
   --green-400: #4fc08a;
   --green-200: #a8e0c3;
   --green-100: #e6f7ef;
-
   --gold-500: #c9a227;
   --gold-400: #dbb84a;
   --gold-300: #e8cd78;
@@ -47,4 +46,16 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+#mainNav {
+  background: var(--green-900);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 0;
+  transition: all 0.3s ease;
+}
+.page-hero {
+  background: linear-gradient(135deg, var(--green-900), var(--green-700));
+  padding: 60px 0 50px;
+  color: var(--white);
 }
