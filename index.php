@@ -40,40 +40,7 @@
     </style>
   </head>
   <body>
-   <nav class="navbar navbar-expand-lg custom-navbar py-3">
-      <div class="container-fluid px-5">
-        <a class="navbar-brand d-flex align-items-center" href="index.php">
-          <img src="assets/LogoRS.avif" alt="Logo" class="me-2" />
-          <div class="brand-text fw-bold">Primary Hospital</div>
-        </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto fw-bold">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="form.php">Reservasi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="biografi.php">Biografi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="biograph.php">About Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <?php include 'header-pasien.php'; ?>
 
     <div class="hero-bg">
     <div class="container col-xxl-8 px-4 py-5">
@@ -122,7 +89,3 @@
     ></script>
   </body>
 </html>
-
-<!-- test -->
- <!-- ini test balasan -->
-  <!-- lagi brokk -->

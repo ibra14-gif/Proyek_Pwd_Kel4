@@ -18,23 +18,27 @@
             </div>
             <div class="login-body">
                 <div class="d-flex gap-2 mb-4">
-                    <button class="login-tab-btn active">
-                        <i class="bi bi-person me-2"></i>Sebagai Pasien
-                    </button>
                     <button class="login-tab-btn">
-                        <i class="bi bi-shield-lock me-2"></i> <a href="login-admin.php" style="text-decoration: none; color: inherit;">Sebagai Admin</a>
+                        <i class="bi bi-person me-2"></i><a href="login.php" style="text-decoration: none; color: inherit;">Sebagai Pasien</a>
+                    </button>
+                    <button class="login-tab-btn active">
+                        <i class="bi bi-shield-lock me-2"></i>Sebagai Admin
                     </button>
                 </div>
 
-                <div class="text-center py-3 mb-4">
-                    <i class="bi bi-person-circle"></i>
-                    <p>Masuk sebagai pasien untuk membuat reservasi dan melihat layanan kami.</p>
-                </div>
-                <div class="d-grid">
-                    <button class="btn btn-teal btn-lg">
-                        <i class="bi bi-box-arrow-in-right me-2"></i><a href="index.php" style="text-decoration: none; color: inherit;">Masuk sebagai Pasien</a>
+                <form method="POST">
+                    <div class="mb-3">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" class="form-control" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-teal btn-lg">
+                        <i class="bi bi-box-arrow-in-right me-2"></i>Masuk sebagai Admin
                     </button>
-                </div>
+                </form>
             </div>
         </div>
     </div>

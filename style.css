@@ -1,0 +1,50 @@
+:root {
+  --green-900: #0f2f1f;
+  --green-800: #144d33;
+  --green-700: #1b6b47;
+  --green-600: #23895c;
+  --green-500: #2ea36f;
+  --green-400: #4fc08a;
+  --green-200: #a8e0c3;
+  --green-100: #e6f7ef;
+
+  --gold-500: #c9a227;
+  --gold-400: #dbb84a;
+  --gold-300: #e8cd78;
+  --gold-100: #fdf6e3;
+
+  --neutral-900: #1a1f24;
+  --neutral-700: #3d4852;
+  --neutral-500: #6b7a8d;
+  --neutral-300: #c0cad4;
+  --neutral-100: #f3f6f9;
+
+  --white: #ffffff;
+  --danger: #dc3545;
+  --success: #198754;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "DM Sans", sans-serif;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md:
+    0 4px 16px rgba(15, 47, 31, 0.12), 0 2px 6px rgba(15, 47, 31, 0.08);
+  --shadow-lg:
+    0 10px 40px rgba(15, 47, 31, 0.18), 0 4px 12px rgba(15, 47, 31, 0.1);
+
+  --radius: 12px;
+  --radius-lg: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--neutral-100);
+  color: var(--neutral-900);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
