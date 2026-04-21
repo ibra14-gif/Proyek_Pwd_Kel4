@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
                 <li class="nav-item">
-                    <span class="badge bg-teal-custom text-white me-2" style="background:var(--teal-600)!important;">
+                    <span class="badge bg-green-custom text-white me-2" style="background:var(--green-600)!important;">
                         <i class="bi bi-person-check me-1"></i>Pasien
                     </span>
                 </li>
@@ -37,7 +37,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= $currentPage === 'biografi.php' ? 'active' : '' ?>" href="biografi.php">
+                    <a class="nav-link <?= $currentPage === 'biografi-pasien.php' ? 'active' : '' ?>" href="biografi-pasien.php">
                         <i class="bi bi-people me-1"></i>Dokter
                     </a>
                 </li>

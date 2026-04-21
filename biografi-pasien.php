@@ -1,7 +1,7 @@
 <?php
 require_once 'koneksi.php';
 
-redirectIfNotLoggedIn();
+// redirectIfNotLoggedIn();
 $dokter_all = $conn->query("SELECT * FROM dokter ORDER BY id_dokter");
 
 

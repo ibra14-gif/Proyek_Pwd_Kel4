@@ -48,14 +48,14 @@ body {
   min-height: 100vh;
 }
 #mainNav {
-  background: var(--green-500);
+  background: var(--green-800);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   padding: 12px 0;
   transition: all 0.3s ease;
 }
 .page-hero {
-  background: linear-gradient(135deg, var(--green-500), var(--green-400));
+  background: linear-gradient(135deg, var(--green-800), var(--green-600));
   padding: 60px 0 50px;
   color: var(--white);
 }
