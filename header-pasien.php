@@ -7,10 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="index.php">
                 <div class="brand-icon">

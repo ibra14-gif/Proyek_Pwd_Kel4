@@ -48,14 +48,61 @@ body {
   min-height: 100vh;
 }
 #mainNav {
-  background: var(--green-900);
+  background: var(--green-500);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   padding: 12px 0;
   transition: all 0.3s ease;
 }
 .page-hero {
-  background: linear-gradient(135deg, var(--green-900), var(--green-700));
+  background: linear-gradient(135deg, var(--green-500), var(--green-400));
   padding: 60px 0 50px;
   color: var(--white);
+}
+
+.form-section {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 576px) {
+  .form-section {
+    padding: 24px 20px;
+  }
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--neutral-700);
+  margin-bottom: 6px;
+}
+.form-label .required {
+  color: var(--danger);
+  margin-left: 2px;
+}
+
+.form-control,
+.form-select {
+  border: 1.5px solid var(--neutral-300);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: var(--neutral-900);
+  transition: all 0.2s;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--green-500);
+  box-shadow: 0 0 0 3px rgba(32, 144, 184, 0.15);
+}
+
+.input-group-text {
+  background: var(--green-100);
+  border: 1.5px solid var(--neutral-300);
+  color: var(--green-700);
+  border-radius: 8px 0 0 8px;
 }
