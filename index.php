@@ -11,12 +11,6 @@
       crossorigin="anonymous"
     />
     <style>
-      /* logo */
-      .me-2 {
-        width: 40px;
-        height: 40px;
-      }
-
       .custom-navbar {
         background-color: rgb(108, 217, 175);
       }
@@ -58,22 +52,19 @@
 
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold lh-1 mb-3">
-            DR. Hailey <br> Copeland
+            Brifa <br> Medika
           </h1>
 
           <p class="lead fw-bold" style="color: rgb(36, 23, 217)">
-            Cardiologist
+            Melayani dengan Sepenuh Hati.
           </p>
 
           <p class="lead">
-            Quickly design and customize responsive mobile-first sites with
-            Bootstrap, the world’s most popular front-end open source toolkit,
-            featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.
+            Klinik Brifa Medika hadir dengan tim dokter spesialis berpengalaman dan fasilitas modern untuk memberikan layanan kesehatan terbaik bagi Anda dan keluarga.
           </p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-              <a class="text-white text-decoration-none" href="form.php">Reservasi Sekarang</a>
+              <a class="text-white text-decoration-none" href="form.php">Buat Reservasi</a>
             </button>
 
           </div>

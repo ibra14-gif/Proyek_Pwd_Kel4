@@ -1,9 +1,9 @@
-<!-- <?php
+<?php
 
-devine('DB_HOST', 'localhost');
-devine('DB_USER', 'root');
-devine('DB_PASS', '');
-devine('DB_NAME', 'reservasi_klinik');
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'reservasi_klinik');
 
 $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
@@ -39,4 +39,4 @@ function redirectIfNotAdmin() {
         exit;
     }
 }
-?> -->
+?>
