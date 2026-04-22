@@ -105,7 +105,7 @@ $dokter_all = $conn->query("SELECT * FROM dokter ORDER BY id_dokter");
 </head>
 
 <body>
-   <?php include 'header-admin.php'; ?> coming soon
+   <?php include 'header-admin.php'; ?>
 
     <section class="page-hero py-5" style="background-color:var(--green-500);">
       <div class="container">
@@ -156,6 +156,8 @@ $dokter_all = $conn->query("SELECT * FROM dokter ORDER BY id_dokter");
         </div>
     </div>
     </section>
+
+    <?php include 'footer.php'; ?>
 
 
 

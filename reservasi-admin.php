@@ -78,5 +78,7 @@ $reservasi = $conn->query("
     </table>
 </div>
 
+<?php include 'footer.php'; ?>
+
 </body>
 </html>
