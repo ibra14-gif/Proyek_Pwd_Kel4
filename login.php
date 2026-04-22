@@ -18,12 +18,12 @@
             </div>
             <div class="login-body">
                 <div class="d-flex gap-2 mb-4">
-                    <button class="login-tab-btn active">
-                        <i class="bi bi-person me-2"></i>Sebagai Pasien
-                    </button>
-                    <button class="login-tab-btn">
-                        <i class="bi bi-shield-lock me-2"></i> <a href="login-admin.php" style="text-decoration: none; color: inherit;">Sebagai Admin</a>
-                    </button>
+                    <a href="login.php" class="login-tab-btn active d-flex align-items-center justify-content-center">
+                        <i class="bi bi-person me-2"></i> Sebagai Pasien
+                    </a>
+                    <a href="login-admin.php" class="login-tab-btn d-flex align-items-center justify-content-center">
+                        <i class="bi bi-shield-lock me-2"></i> Sebagai Admin
+                    </a>
                 </div>
 
                 <div class="text-center py-3 mb-4">
@@ -31,9 +31,9 @@
                     <p>Masuk sebagai pasien untuk membuat reservasi dan melihat layanan kami.</p>
                 </div>
                 <div class="d-grid">
-                    <button class="btn btn-teal btn-lg">
-                        <i class="bi bi-box-arrow-in-right me-2"></i><a href="index.php" style="text-decoration: none; color: inherit;">Masuk sebagai Pasien</a>
-                    </button>
+                    <a href="index.php" class="btn btn-teal btn-lg">
+                        <i class="bi bi-box-arrow-in-right me-2"></i>Masuk sebagai Pasien
+                    </a>
                 </div>
             </div>
         </div>

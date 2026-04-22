@@ -37,6 +37,7 @@ $reservasi = $conn->query("
         <p class="text-center mb-0">Kelola semua data reservasi pasien klinik</p>
     </div>
 </section>
+
 <div class="container mt-5">
 
     <table class="table table-bordered">
