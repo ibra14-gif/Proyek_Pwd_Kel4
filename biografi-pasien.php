@@ -178,6 +178,8 @@ $dokter_all = $conn->query("SELECT * FROM dokter ORDER BY id_dokter");
     </div>
 </section>
 
+<?php include 'footer.php'; ?>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

@@ -157,6 +157,8 @@ $dokter_all = $conn->query("SELECT * FROM dokter ORDER BY id_dokter");
     </div>
     </section>
 
+    <?php include 'footer.php'; ?>
+
 
 
     <script

@@ -51,4 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <button class="btn btn-primary">Simpan</button>
     </form>
+
+    <?php include 'footer.php'; ?>
+    
 </div>
