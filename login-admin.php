@@ -26,8 +26,8 @@
                     </a>
                 </div>
 
-            <div id="panelAdmin">
-                <form method="POST">
+            <div id="panelAdmin" >
+                <form method="POST" action="proses-login.php">
                     <input type="hidden" name="mode" value="admin">
                     <div class="mb-3">
                         <label class="form-label">Username Admin</label>

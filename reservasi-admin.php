@@ -1,6 +1,10 @@
 <?php
 require_once 'koneksi.php';
-// redirectIfNotAdmin();
+
+if (!isset($_SESSION['login'])) {
+    header("Location: login-admin.php");
+    exit;
+}
 
 // HAPUS DATA
 if (isset($_GET['hapus'])) {
@@ -78,7 +82,6 @@ $reservasi = $conn->query("
     </table>
 </div>
 
-<?php include 'footer.php'; ?>
 
 </body>
 </html>

@@ -12,30 +12,6 @@ if ($conn->connect_error) {
 
 $conn->set_charset("utf8mb4");
 
-define('ADMIN_USER', 'admin');
-define('ADMIN_PASS', 'admin123');
-
 session_start();
 
-function isAdmin() {
-    return isset($_SESSION['role']) && $_SESSION['role'] === 'admin';
-}
-
-function isLoggedIn() {
-    return isset($_SESSION['role']);
-}
-
-function redirectIfNotLoggedIn() {
-    if (!isLoggedIn()) {
-        header("Location: login.php");
-        exit;
-    }
-}
-
-function redirectIfNotAdmin() {
-    if (!isAdmin()) {
-        header("Location: login.php");
-        exit;
-    }
-}
 ?>

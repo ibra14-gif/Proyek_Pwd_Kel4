@@ -1,6 +1,10 @@
 <?php
 require_once 'koneksi.php';
-// redirectIfNotAdmin();
+
+if (!isset($_SESSION['login'])) {
+    header("Location: login-admin.php");
+    exit;
+}
 
 $id = (int)$_GET['id'];
 

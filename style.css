@@ -181,3 +181,14 @@ body {
   box-shadow: var(--shadow-md);
   color: var(--white) !important;
 }
+
+.feature-card {
+  border: 2px solid var(--green-500);
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}

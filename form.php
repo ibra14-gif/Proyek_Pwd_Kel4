@@ -1,6 +1,5 @@
 <?php
 require_once 'koneksi.php';
-// redirectIfNotLoggedIn();
 
 if (isAdmin()) {
     header("Location: index.php");
@@ -10,6 +9,8 @@ if (isAdmin()) {
 // Ambil semua dokter
 $dokter = $conn->query("SELECT * FROM dokter ORDER BY id_dokter");
 
+// Ambil dokter yang dipilih
+$id_dokter = isset($_GET['id
 // Ambil dokter yang dipilih
 $id_dokter = isset($_GET['id_dokter']) ? (int)$_GET['id_dokter'] : 0;
 
