@@ -32,7 +32,7 @@
                     </span>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= $currentPage === 'index.php' ? 'active' : '' ?>" href="index.php">
+                    <a class="nav-link <?= $currentPage === 'dashboard.php' ? 'active' : '' ?>" href="dashboard.php">
                         <i class="bi bi-house me-1"></i>Dashboard
                     </a>
                 </li>
@@ -42,7 +42,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= $currentPage === 'form.php' ? 'active' : '' ?>" href="form.php">
+                    <a class="nav-link <?= $currentPage === 'reservasi-admin.php' ? 'active' : '' ?>" href="reservasi-admin.php">
                         <i class="bi bi-calendar-plus me-1"></i>Reservasi
                     </a>
                 </li>
