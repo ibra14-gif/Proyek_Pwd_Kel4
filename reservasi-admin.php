@@ -10,7 +10,7 @@ if (!isset($_SESSION['login'])) {
 if (isset($_GET['hapus'])) {
     $id = (int)$_GET['hapus'];
     $conn->query("DELETE FROM reservasi WHERE id_reservasi = $id");
-    header("Location: reservasi_admin.php");
+    header("Location: reservasi-admin.php");
     exit;
 }
 
@@ -72,16 +72,14 @@ $reservasi = $conn->query("
                 <td><?= htmlspecialchars($r['keluhan']) ?></td>
                 <td>
                     <a href="edit-reservasi.php?id=<?= $r['id_reservasi'] ?>" class="btn btn-sm btn-warning">Edit</a>
-                    <a href="?hapus=<?= $r['id_reservasi'] ?>" 
-                       class="btn btn-sm btn-danger"
-                       onclick="return confirm('Yakin hapus?')">Hapus</a>
+                    <a href="?hapus=<?= $r['id_reservasi'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin hapus?')">Hapus</a>
                 </td>
             </tr>
         <?php endwhile; ?>
         </tbody>
     </table>
 </div>
-
-
+<br><br><br>
+<?php include 'footer.php'; ?>
 </body>
 </html>
