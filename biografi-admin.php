@@ -45,13 +45,13 @@ $dokter_all = $conn->query("SELECT * FROM dokter ORDER BY id_dokter");
     text-align: center; position: relative;
 }
 .doctor-avatar {
-    display: flex;                /* Menggunakan flexbox untuk mengatur posisi icon */
-    align-items: center;          /* Icon tepat di tengah secara vertikal */
-    justify-content: center;      /* Icon tepat di tengah secara horizontal */
-    margin: 0 auto 15px;          /* Meletakkan avatar di tengah card dan memberi jarak bawah */
-    color: #ffffff;               /* Warna icon jadi putih */
-    font-size: 2.5rem;            /* Mengatur ukuran icon-nya */
-    transition: all 0.3s ease;    /* Efek halus kalau nanti ada hover */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    color: #ffffff;
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
     font-size: 100px;
 }
 
@@ -119,7 +119,7 @@ $dokter_all = $conn->query("SELECT * FROM dokter ORDER BY id_dokter");
       </div>
     </section>
 
-    <!-- Biografi -->
+
      <section class="py-5">
     <div class="container">
         <div class="row g-4">

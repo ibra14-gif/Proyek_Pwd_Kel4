@@ -1,19 +1,14 @@
 <?php
 require_once 'koneksi.php';
 
-// if (isAdmin()) {
-//     header("Location: index.php");
-//     exit;
-// }
-
-// Ambil semua dokter
+// Mengambil semua data dokter
 $dokter = $conn->query("SELECT * FROM dokter ORDER BY id_dokter");
 
 
-// Ambil dokter yang dipilih
+// Mengambil data dokter yang dipilih
 $id_dokter = isset($_GET['id_dokter']) ? (int)$_GET['id_dokter'] : 0;
 
-// Ambil jadwal berdasarkan dokter
+// Mengambil data jadwal berdasarkan dokter
 $jadwal = [];
 if ($id_dokter > 0) {
     $result = $conn->query("SELECT * FROM jadwal WHERE id_dokter = $id_dokter AND kuota > 0");
@@ -40,7 +35,6 @@ if ($id_dokter > 0) {
             <i class="bi bi-person-fill-add me-2 text-teal"></i>Data Pasien & Janji Temu
         </h4>
         <p class="text-muted small mb-4">Tanda <span class="text-danger">*</span> wajib diisi</p>
-        <!-- FORM PILIH DOKTER (GET) -->
 
         <form method="GET">
             <div class="mb-4">
@@ -61,11 +55,9 @@ if ($id_dokter > 0) {
 
         <hr>
 
-        <!-- FORM RESERVASI (POST) -->
         <form action="landing.php" method="POST" id="reservasiForm">
-
             <input type="hidden" name="id_dokter" value="<?= $id_dokter ?>">
-
+            
             <!-- Jadwal -->
             <div class="mb-4">
                 <label class="form-label">Hari & Jadwal Temu <span class="required">*</span></label>

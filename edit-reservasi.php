@@ -8,20 +8,20 @@ if (!isset($_SESSION['login'])) {
 
 $id = (int)$_GET['id'];
 
-// ambil data reservasi
+//mengambil data reservasi
 $data = $conn->query("
     SELECT * FROM reservasi WHERE id_reservasi = $id
 ")->fetch_assoc();
 
-// ambil dokter
+//mengambil data dokter
 $dokter = $conn->query("SELECT * FROM dokter");
 
-// ambil jadwal sesuai dokter saat ini
+//mengambil data jadwal sesuai dokter saat ini
 $jadwal = $conn->query("
     SELECT * FROM jadwal WHERE id_dokter = {$data['id_dokter']}
 ");
 
-// proses update
+// memproses update data
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nama = $_POST['nama_pasien'];
     $nohp = $_POST['no_hp'];

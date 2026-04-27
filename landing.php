@@ -1,13 +1,13 @@
 <?php
 require_once 'koneksi.php';
 
-// Cegah akses langsung tanpa POST
+// Mencegah akses langsung tanpa POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header("Location: form.php");
     exit;
 }
 
-// Ambil data dari form
+// Mengambil data dari form
 $nama       = $_POST['nama_pasien'] ?? '';
 $no_hp      = $_POST['no_hp'] ?? '';
 $id_dokter  = (int)($_POST['id_dokter'] ?? 0);
@@ -15,13 +15,13 @@ $id_jadwal  = (int)($_POST['id_jadwal'] ?? 0);
 $tanggal    = $_POST['tanggal'] ?? '';
 $keluhan    = $_POST['keluhan'] ?? '';
 
-// Ambil data dokter
+// Mengambil data dokter
 $dokter = $conn->query("SELECT nama_dokter FROM dokter WHERE id_dokter = $id_dokter")->fetch_assoc();
 
-// Ambil data jadwal
+// Mengambil data jadwal
 $jadwal = $conn->query("SELECT hari, jam_mulai, jam_selesai, kuota FROM jadwal WHERE id_jadwal = $id_jadwal")->fetch_assoc();
 
-// Simpan ke database
+// Menyimpan data ke database
 $success = false;
 $error = '';
 
@@ -37,7 +37,7 @@ if ($id_dokter && $id_jadwal && $nama && $no_hp && $tanggal && $keluhan) {
 
         if ($conn->query($query)) {
 
-            // Kurangi kuota
+            // Mengurangi kuota
             $conn->query("UPDATE jadwal SET kuota = kuota - 1 WHERE id_jadwal = $id_jadwal");
 
             $success = true;

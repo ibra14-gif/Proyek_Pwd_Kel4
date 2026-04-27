@@ -6,7 +6,7 @@ if (!isset($_SESSION['login'])) {
     exit;
 }
 
-// HAPUS DATA
+// MENGHAPUS DATA
 if (isset($_GET['hapus'])) {
     $id = (int)$_GET['hapus'];
     $conn->query("DELETE FROM reservasi WHERE id_reservasi = $id");
@@ -14,7 +14,7 @@ if (isset($_GET['hapus'])) {
     exit;
 }
 
-// AMBIL DATA
+// MENGAMBIL DATA
 $reservasi = $conn->query("
     SELECT r.*, d.nama_dokter, j.hari, j.jam_mulai, j.jam_selesai
     FROM reservasi r
